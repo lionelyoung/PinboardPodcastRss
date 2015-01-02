@@ -1,0 +1,3 @@
+api_token = "jsmith:9ABC8DEF7GHI6JKL5MNO"
+limit_tags = ["mp3"]
+output = "pinduff.rss"
