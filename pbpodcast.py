@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from feedgen.feed import FeedGenerator
 from pinboard import Pinboard
 from config import api_token, limit_tags, output
@@ -32,5 +33,4 @@ if __name__ == "__main__":
             fe.enclosure(bm.url, 0, "audio/mpeg")
 
     # generate feed
-    fg.rss_str(pretty=True)
     fg.rss_file(output)
