@@ -2,6 +2,7 @@
 from feedgen.feed import FeedGenerator
 from pinboard import Pinboard
 from config import api_token, limit_tags, output
+from pytz import utc
 
 if __name__ == "__main__":
     # create the feed
@@ -28,6 +29,7 @@ if __name__ == "__main__":
         if 'mp3' in bm.url:
             fe = fg.add_entry()
             fe.id(bm.url)
+            fe.pubdate(utc.localize(bm.time))
             fe.title(bm.description)
             fe.description(bm.extended)
             fe.enclosure(bm.url, 0, "audio/mpeg")
