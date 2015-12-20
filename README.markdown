@@ -1,6 +1,6 @@
 # Config
 
-The config.py contains your Pinbaord API token, so it can grab the recent
+The config.py contains your Pinboard API token, so it can grab the recent
 posts.  Use `limit_tags` to filter certain tags
 
 1. Visit https://pinboard.in/settings/password to get your API token
