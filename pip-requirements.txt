@@ -1,6 +1,6 @@
 dateutils==0.6.6
 feedgen>=0.9.0
-lxml==3.4.1
+lxml==4.6.3
 pinboard==0.5.7
 python-dateutil==2.3
 pytz==2014.10
